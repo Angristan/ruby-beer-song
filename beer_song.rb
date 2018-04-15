@@ -14,4 +14,10 @@ class BeerSong
       "Take one down and pass it around, #{number - 1} bottles of beer on the wall.\n"
     end
   end
+  def verses(max, min)
+    (max).downto(min) do |verse|
+      "#{verse} bottles of beer on the wall, #{verse} bottles of beer.\n" \
+      "Take one down and pass it around, #{verse - 1} bottles of beer on the wall.\n"
+    end
+  end
 end
